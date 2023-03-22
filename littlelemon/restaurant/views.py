@@ -11,7 +11,6 @@ from .serializers import MenuItemSerializer,BookingSerializer
 # Create your views here.
 
 def index(request):
-    print ('in views indec')
     return render(request, 'index.html', {})
 
 class BookingViewSet(ModelViewSet):
