@@ -20,7 +20,7 @@ class BookingViewSet(ModelViewSet):
     permission_classes = [IsAuthenticated] 
 
 class MenuItemsView(ListCreateAPIView):
-    permission_classes = [IsAuthenticated]
+   # permission_classes = [IsAuthenticated]
     queryset = MenuItem.objects.all()
     serializer_class = MenuItemSerializer
 
